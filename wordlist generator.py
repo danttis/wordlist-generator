@@ -18,15 +18,12 @@ def check_string(x):
     return True  # The string does not exist in the file
 
 
-while True:
+for i in range(cont):
   a = vector[random.randint(0,5)]+vector[random.randint(0,5)]
   b = vector[random.randint(0,5)]+vector_number[random.randint(0,7)]
   if check_string(a):
     file.write(a+line_break)
   if check_string(b):
     file.write(b+line_break)
-  i+=1
-  if i == cont:
-    break
-
+ 
 file.close()
